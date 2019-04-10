@@ -10,11 +10,6 @@ public class Colour
     public int b;
     public int value;
 
-    
-    //public void setAbsMag(float absMag) {
-     //   this.absMag = absMag;
-    //}
-
     public String toString()
     {
         return colour + "\t" + r + "\t" + g + "\t" + b + "\t" + value;  
