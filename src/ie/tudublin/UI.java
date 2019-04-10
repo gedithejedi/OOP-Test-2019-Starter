@@ -20,7 +20,7 @@ public class UI extends PApplet
 
 	public void settings()
 	{
-		size(500, 800);
+		size(800, 800);
 		
 		separate(381);
 		separate(1);
@@ -29,9 +29,22 @@ public class UI extends PApplet
 
 	public void setup() 
 	{
+		loadData();
+	}
+
+	public void loadData() 
+	{
+		Table table = loadTable("colours.csv", "header");
+
+		for(int i = 0 ; i < table.getRowCount() ; i ++) 
+		{ 
+			TableRow row = table.getRow(i); System.out.println(row.getString("colour"));
+			  System.out.println(row.getString("colour"));
+		}	  
 	}
 	
 	public void draw()
-	{			
+	{	
+
 	}
 }
